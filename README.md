@@ -8,9 +8,9 @@ Usage
 -----
 
 ```sh
-$ ./run
+$ curl -s https://gitcdn.link/repo/fkmclane/docker-carillon/master/run | bash
 ```
 
 Open `localhost:8080` and `localhost:8081` in your web browser.
 
-Putting nginx with a certificate and access controls for `localhost:8081` is recommended.
+Putting nginx with a certificate for `localhost:8080` and access controls for `localhost:8081` is recommended.
