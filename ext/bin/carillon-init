@@ -1,0 +1,17 @@
+#!/bin/bash -e
+# copy repository
+cp -a /ext/lib/carillon /usr/lib/carillon
+
+# setup carillon
+/usr/lib/carillon/setup
+
+# start carillon
+tmux new-session -d -s carillon /usr/lib/carillon/carillon
+
+# trap exit
+trap 'pkill python3' SIGINT SIGTERM
+
+# wait for exit
+while tmux has-session -t carillon; do
+	sleep 5
+done
