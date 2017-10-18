@@ -8,7 +8,7 @@ Usage
 -----
 
 ```sh
-$ curl -s https://gitcdn.link/repo/fkmclane/docker-carillon/master/run | bash
+$ curl -Ls https://gitcdn.link/repo/fkmclane/docker-carillon/master/run | sudo bash
 ```
 
 Open `localhost:8080` and `localhost:8081` in your web browser.
